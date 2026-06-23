@@ -8,4 +8,6 @@ spring:
     config:
       server:
         git:
-          uri: file://${user.home}/configuraciones
+          uri: https://github.com/Kisito10/aauca-config
+          default-label: main
+          clone-on-start: true
