@@ -1,6 +1,7 @@
 ARG BUILD_MODULE=microservicio-noticias
 
 FROM maven:3.9-eclipse-temurin-17 AS build
+ARG BUILD_MODULE
 WORKDIR /app
 COPY . .
 RUN mvn clean package -DskipTests -pl ${BUILD_MODULE} -am
