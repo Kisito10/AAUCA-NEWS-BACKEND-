@@ -14,7 +14,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/api/lectura")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = {"http://localhost:4200", "https://aauca-news.vercel.app"})
 public class LecturaControlador {
 
     private final LecturaServicio lecturaServicio;

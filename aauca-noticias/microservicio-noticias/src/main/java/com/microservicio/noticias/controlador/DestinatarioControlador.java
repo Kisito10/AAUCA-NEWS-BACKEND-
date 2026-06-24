@@ -15,7 +15,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/api/destinatario")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = {"http://localhost:4200", "https://aauca-news.vercel.app"})
 public class DestinatarioControlador {
 
     private final DestinatarioServicio destinatarioServicio;

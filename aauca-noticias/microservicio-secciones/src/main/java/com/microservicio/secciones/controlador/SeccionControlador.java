@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Map;
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = {"http://localhost:4200", "https://aauca-news.vercel.app"})
 @RestController
 @RequestMapping("/api/seccion")
 @RequiredArgsConstructor

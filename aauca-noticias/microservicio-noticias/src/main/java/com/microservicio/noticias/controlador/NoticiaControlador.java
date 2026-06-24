@@ -23,7 +23,7 @@ import java.util.UUID;
 @RestController
 @RequestMapping("/api/noticia")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = {"http://localhost:4200", "https://aauca-news.vercel.app"})
 public class NoticiaControlador {
 
     private final NoticiaServicio noticiaServicio;
